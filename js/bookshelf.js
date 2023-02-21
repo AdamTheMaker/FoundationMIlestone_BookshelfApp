@@ -34,10 +34,11 @@ class Book {
         const commentList = document.createElement('ul');
         commentList.classList.add('comments');
         commentButton.addEventListener('click', function(){
-            let comments = prompt(`leave a comment about ${this.title} :`, 'leave your comment');
+            let comments = prompt(`leave a comment about ${this.title} (only 280 characters will be kept):`, '');
             if (comments == null || comments =="") {
                 window.alert('you have left no comment')
             } else {
+                comments = comments.substring(0, 280);
                 let commentPost = document.createElement('li');
                 commentPost.textContent = comments;
                 commentList.append(commentPost)
