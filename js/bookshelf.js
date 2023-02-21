@@ -28,14 +28,28 @@ class Book {
         const bookAuthor = document.createElement('h4');
         bookAuthor.textContent = ` b. ${this.author}`;
         
-        const favButton = document.createElement('button');
-        favButton.textContent = 'favorite';
+        //comments - going to try and do a button that triggers a popup where you can input the comment and then it adds below the visualized book on the page
+        const commentButton = document.createElement('button');
+        commentButton.textContent = 'Comment';
+        const commentList = document.createElement('ul');
+        commentList.classList.add('comments');
+        commentButton.addEventListener('click', function(){
+            let comments = prompt(`leave a comment about ${this.title} :`, 'leave your comment');
+            if (comments == null || comments =="") {
+                window.alert('you have left no comment')
+            } else {
+                let commentPost = document.createElement('li');
+                commentPost.textContent = comments;
+                commentList.append(commentPost)
+            }
+        }.bind(this))
                  
         binding.append(bookTitle);
         binding.append(bookAuthor);
         binding.append(infoButton)
-        binding.append(favButton);
+        binding.append(commentButton);
         listing.append(binding);
+        listing.append(commentList)
 
         return listing;
 
