@@ -1,0 +1,1 @@
+// this is where the code that will be ran to activate contents from other js pages
