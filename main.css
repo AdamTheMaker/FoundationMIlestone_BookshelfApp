@@ -7,7 +7,7 @@
     align-items: center;
     width: fit-content;
     min-width: 45%;
-    background-image: url(images/leatherback.jfif);
+    /* background-image: url(images/leatherback.jfif); */
     color: rgb(207, 171, 171);
     box-shadow: 3px 3px 5px black;
 }
