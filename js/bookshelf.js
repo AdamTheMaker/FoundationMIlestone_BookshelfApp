@@ -87,7 +87,7 @@ class Bookshelf {
         this.shelf.push(book);
     }
 
-    addStack(newStack) {
+    addStack(newStack) { //due to finding duplicate entries in the bookdata may want to add quantity to book class and something here to organize that. (if have the extra time and energy)
         newStack.map(nextBook => {
             let builtBook = new Book(nextBook.author, nextBook.language, nextBook.subject, nextBook.title);
             this.shelf.push(builtBook)
@@ -97,9 +97,7 @@ class Bookshelf {
     shelfStocker() {
         this.shelf.map((element) => document.querySelector('.books').append(element.render()))
     }
-    
-    // These features are not needed for the final but may impliment anyway if I decide to
-    
+    //to be able to put books in alphabetical order. gonna make the default view a to z from the jump.     
     sortAtoZ() {
             this.shelf.sort((a, b) => a.title.localeCompare(b.title));
         }
@@ -124,5 +122,5 @@ class Bookshelf {
 }
 
 //code used to test and console out functions to ensure code was working
-const testBook = new Book(["Bojoh, Adam"], 'en', ['Fantasy', 'Fiction'], 'A Amazing Storys of my Youth')
-console.log(testBook)
+// const testBook = new Book(["Bojoh, Adam"], 'en', ['Fantasy', 'Fiction'], 'A Amazing Storys of my Youth')
+// console.log(testBook)

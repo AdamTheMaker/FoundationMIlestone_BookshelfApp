@@ -23,8 +23,34 @@ most the features will be housed in the JS but continuous items like the header/
     <div>
         <h1>Welcome to The Stack</h1>
         <div>
-            <button class="addBook">Add Book</button>
-            
+            <button class="openButton" onclick="newBookForm()">Add Book</button> <!-- using onclick on the add book form to try something different than just having everything in JS-->
+            <div class="newBookPopup">
+                <div class="formPopup" id="addBookPopup">
+                    <form class="formContainer">
+                        <h2>New Book Entry</h2>
+                    <label for="Title">
+                        <strong>Title</strong>
+                    </label>
+                    <input type="text" id="newTitle" placeholder="Book Title" required>
+                    <label for="Author">
+                        <strong>Author</strong>
+                    </label>
+                    <input type="text" id="newAuthor" placeholder="Last, First" required>
+                    <label for="Subject">
+                            <strong>Subject</strong>
+                    </label>
+                    <input type="text" id="newSubject" placeholder="Subject(s)" required>
+                    <label for="Language">
+                            <strong>Language</strong>
+                    </label>
+                    <input type="text" id="newLanguage" placeholder="language" required>
+                    <div>
+                        <button class="btn completeBook">ADD</button>
+                        <button class="btn cancel" onclick="closeBookForm()">Cancel</button>
+                    </div>
+                    </form>
+                </div>
+              </div>
         <div>
             <input type="text" class="userInput">
             <button class ='search'>Search</button>

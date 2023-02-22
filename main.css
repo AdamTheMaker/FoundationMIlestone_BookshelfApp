@@ -2,12 +2,84 @@
 
 .book {
     border: 1px solid black;
-    margin: 2px;
+    margin: 15px;
     padding: 15px;
     align-items: center;
     width: fit-content;
     min-width: 45%;
     /* background-image: url(images/leatherback.jfif); */
-    color: rgb(207, 171, 171);
+    /* color: rgb(207, 171, 171); */
     box-shadow: 3px 3px 5px black;
 }
+
+
+
+/*test area*/
+
+/* .openBtn {
+    display: flex;
+    justify-content: left;
+  } */
+  /* .openButton {
+    border: none;
+    border-radius: 5px;
+    background-color: #1c87c9;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    position: fixed;
+  } */
+  /* .newBookPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  } */
+
+  /*styling for the add book pop*/
+  label {
+    position: center
+  }
+  .formPopup {
+    display: none;
+    position: fixed;
+    left: 45%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #999999;
+    z-index: 9;
+  }
+  .formContainer {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+  }
+  .formContainer input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #bbc585;
+  }
+  .formContainer input[type=text]:focus {
+    background-color: #eeeedc;
+    outline: none;
+  }
+  .formContainer .btn {
+    padding: 12px 20px;
+    border: none;
+    background-color: #8ebf42;
+    color: #fff;
+    cursor: pointer;
+    width: 50%;
+    margin-bottom: 15px;
+    opacity: 0.8;
+  }
+  .formContainer .cancel {
+    background-color: #cc0000;
+  }
+  .formContainer .btn:hover,
+  .openButton:hover {
+    opacity: 1;
+  }
+
+
