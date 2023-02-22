@@ -9,13 +9,19 @@ theShelf.addStack(bookData)
 
 theShelf.shelfStocker()
 
-const userInput = document.querySelector('.userInput');
-const sortButton = document.querySelector('.sorting');
 
-sortButton.addEventListener('click', function() {
+//used this to get the search function working
+const userInput = document.querySelector('.userInput');
+const searchButton = document.querySelector('.search');
+
+searchButton.addEventListener('click', function() {
     if (userInput.value) {
+        const bookList = document.querySelector('.books');
+        bookList.innerHTML = "";
         theShelf.search(userInput.value);
     } else {
+        const bookList = document.querySelector('.books');
+        bookList.innerHTML = "";
         theShelf.shelfStocker();
     }
 })
