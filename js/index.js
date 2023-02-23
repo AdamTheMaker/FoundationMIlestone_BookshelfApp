@@ -41,7 +41,7 @@ const subjetInput = document.getElementById('newSubject');
 const languageInput = document.getElementById('newLanguage');
 
 newBookToShelf.addEventListener('click', function() {
-    event.preventDefault();
+    event.preventDefault();//did not have this initially and was causing my form to refresh the page as form normally would feed info to something on the backend, this stopped that refresh
     let authorArray = [authorInput.value];//had to add these 2 lines to adjust the string values into arrays to match way other books are built and to function propertly in my search method
     let subjectArray = [subjetInput.value];
     let bookToAdd = new Book(authorArray, languageInput.value, subjectArray, titleInput.value)
