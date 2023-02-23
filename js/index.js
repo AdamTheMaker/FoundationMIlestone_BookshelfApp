@@ -1,5 +1,4 @@
-// this is where the code that will be ran to activate contents from other js pages
-
+//starting with core from previous bookshelf
 const theShelf = new Bookshelf()
 
 // theShelf.addBook(testBook) //remove this test book when done using
@@ -43,8 +42,8 @@ const languageInput = document.getElementById('newLanguage');
 
 newBookToShelf.addEventListener('click', function() {
     event.preventDefault();
-    let authorArray = [authorInput.value];
-    let subjectArray = [subjetInput.value]
+    let authorArray = [authorInput.value];//had to add these 2 lines to adjust the string values into arrays to match way other books are built and to function propertly in my search method
+    let subjectArray = [subjetInput.value];
     let bookToAdd = new Book(authorArray, languageInput.value, subjectArray, titleInput.value)
     theShelf.addBook(bookToAdd);
     bookList.innerHTML = "";

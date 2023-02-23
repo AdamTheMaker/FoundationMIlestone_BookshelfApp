@@ -1,45 +1,71 @@
 /* the stylesheet */
+/* Header across all pages */
+header {
+    font-family: 'copperplate';
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right:0;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 10px;
+    background: silver;
+}
 
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+}
+
+.logo {
+    font-size: 2em;
+    font-family: fantasy;
+}
+
+body {
+    margin-top: 10%;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd-techinternational.com%2Fwp-content%2Fuploads%2F2018%2F06%2FFuturistic-Library.jpg&f=1&nofb=1&ipt=8b68067d807c537e141e8dc7d0be9a088dcdd7162df7e5386e7866c077e5d71c&ipo=images);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+/* Styling the books */
 .book {
     border: 1px solid black;
-    margin: 15px;
+    margin-top: 30px;
     padding: 15px;
     align-items: center;
     width: fit-content;
     min-width: 45%;
-    /* background-image: url(images/leatherback.jfif); */
-    /* color: rgb(207, 171, 171); */
+    background-image: url(images/leather2.jfif);
+    color: rgb(207, 171, 171);
     box-shadow: 3px 3px 5px black;
+}
+.comments {
+    border: 1px solid black;
+    width: fit-content;
+    background-color: silver ;
+}
+.comments li {
+    padding-right: 10px;
 }
 
 
 
-/*test area*/
-
-/* .openBtn {
-    display: flex;
-    justify-content: left;
-  } */
-  /* .openButton {
-    border: none;
-    border-radius: 5px;
-    background-color: #1c87c9;
-    color: white;
-    padding: 14px 20px;
-    cursor: pointer;
-    position: fixed;
-  } */
-  /* .newBookPopup {
-    position: relative;
-    text-align: center;
-    width: 100%;
-  } */
 
   /*styling for the add book pop*/
-  label {
+label {
     position: center
-  }
-  .formPopup {
+}
+.formPopup {
     display: none;
     position: fixed;
     left: 45%;
@@ -47,24 +73,24 @@
     transform: translate(-50%, 5%);
     border: 3px solid #999999;
     z-index: 9;
-  }
-  .formContainer {
+}
+.bookForm {
     max-width: 300px;
     padding: 20px;
     background-color: white;
-  }
-  .formContainer input[type=text] {
+}
+.bookForm input[type=text] {
     width: 90%;
     padding: 15px;
     margin: 5px 0 20px 0;
     border: none;
     background: #bbc585;
-  }
-  .formContainer input[type=text]:focus {
+}
+.bookForm input[type=text]:focus {
     background-color: #eeeedc;
     outline: none;
-  }
-  .formContainer .btn {
+}
+.bookForm .btn {
     padding: 12px 20px;
     border: none;
     background-color: #8ebf42;
@@ -73,13 +99,13 @@
     width: 50%;
     margin-bottom: 15px;
     opacity: 0.8;
-  }
-  .formContainer .cancel {
+}
+.bookForm .cancel {
     background-color: #cc0000;
-  }
-  .formContainer .btn:hover,
-  .openButton:hover {
+}
+.bookForm .btn:hover,
+.openButton:hover {
     opacity: 1;
-  }
+}
 
 

@@ -12,7 +12,7 @@ most the features will be housed in the JS but continuous items like the header/
 <body>
     <header>
         <nav>
-            <a href="index.html">The Stack</a>
+            <a href="index.html" class="logo">The Stack</a>
         </nav>
         <nav>
             <a href="index.html">BOOKS</a>
@@ -24,9 +24,9 @@ most the features will be housed in the JS but continuous items like the header/
         <h1>Welcome to The Stack</h1>
         <div>
             <button class="openButton" onclick="newBookForm()">Add Book</button> <!-- using onclick on the add book form to try something different than just having everything in JS-->
-            <div class="newBookPopup">
+             <div class="newBookPopup"> <!--i did not want a straight line or huge block of inputs resting on my page. the popup form below was a solution i found to solve it-->
                 <div class="formPopup" id="addBookPopup">
-                    <form class="formContainer">
+                    <form class="bookForm">
                         <h2>New Book Entry</h2>
                     <label for="Title">
                         <strong>Title</strong>
