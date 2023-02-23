@@ -15,45 +15,46 @@ most the features will be housed in the JS but continuous items like the header/
             <a href="index.html" class="logo">The Stack</a>
         </nav>
         <nav>
-            <a href="index.html">BOOKS</a>
+            <a href="index.html" class = 'current'>BOOKS</a>
             <a href="about.html">ABOUT</a>
             <a href="contact.html">CONTACT US</a>
         </nav>
     </header>
-    <div>
-        <h1>Welcome to The Stack</h1>
+    <div class = 'welcome'>
+        <h1>I, N0V3L-1452, Welcome you to my Books</h1>
         <div>
-            <button class="openButton" onclick="newBookForm()">Add Book</button> <!-- using onclick on the add book form to try something different than just having everything in JS-->
-             <div class="newBookPopup"> <!--i did not want a straight line or huge block of inputs resting on my page. the popup form below was a solution i found to solve it-->
+            <button class="openButton" onclick="newBookForm()">Please, Add a Book</button> <!-- using onclick on the add book form to try something different than just having everything in JS-->
+            <div class="newBookPopup"> <!--i did not want a straight line or huge block of inputs resting on my page. the popup form below was a solution i found to solve it-->
                 <div class="formPopup" id="addBookPopup">
                     <form class="bookForm">
                         <h2>New Book Entry</h2>
-                    <label for="Title">
-                        <strong>Title</strong>
-                    </label>
-                    <input type="text" id="newTitle" placeholder="Book Title" required>
-                    <label for="Author">
-                        <strong>Author</strong>
-                    </label>
-                    <input type="text" id="newAuthor" placeholder="Last, First" required>
-                    <label for="Subject">
+                        <label for="Title">
+                            <strong>Title</strong>
+                        </label>
+                        <input type="text" id="newTitle" placeholder="Book Title" required>
+                        <label for="Author">
+                            <strong>Author</strong>
+                        </label>
+                        <input type="text" id="newAuthor" placeholder="Last, First" required>
+                        <label for="Subject">
                             <strong>Subject</strong>
-                    </label>
-                    <input type="text" id="newSubject" placeholder="Subject(s)" required>
-                    <label for="Language">
+                        </label>
+                        <input type="text" id="newSubject" placeholder="Subject(s)" required>
+                        <label for="Language">
                             <strong>Language</strong>
-                    </label>
-                    <input type="text" id="newLanguage" placeholder="language" required>
-                    <div>
-                        <button class="btn completeBook">ADD</button>
-                        <button class="btn cancel" onclick="closeBookForm()">Cancel</button>
-                    </div>
+                        </label>
+                        <input type="text" id="newLanguage" placeholder="language" required>
+                        <div>
+                            <button class="btn completeBook">ADD</button>
+                            <button class="btn cancel" onclick="closeBookForm()">Cancel</button>
+                        </div>
                     </form>
                 </div>
-              </div>
-        <div>
-            <input type="text" class="userInput">
-            <button class ='search'>Search</button>
+            </div>
+            <div >
+                <input type="text" class="userInput" placeholder="What are you looking for?">
+                <button class ='search'>Search</button>
+            </div>
         </div>
     </div>
     <ul class = "books"></ul>

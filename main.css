@@ -28,13 +28,35 @@ a {
     font-family: fantasy;
 }
 
+.current {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 body {
     margin-top: 10%;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd-techinternational.com%2Fwp-content%2Fuploads%2F2018%2F06%2FFuturistic-Library.jpg&f=1&nofb=1&ipt=8b68067d807c537e141e8dc7d0be9a088dcdd7162df7e5386e7866c077e5d71c&ipo=images);
     background-position: center;
-    background-size: contain;
+    background-size: 100%;
     background-attachment: fixed;
 
+}
+
+/*welcome area*/
+.welcome {
+    margin: 5%;
+    background-color: slategray;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+}
+.welcome h1 {
+    font-family: 'Franklin Gothic Medium';
 }
 
 /* Styling the books */
@@ -48,6 +70,7 @@ body {
     background-image: url(images/leather2.jfif);
     color: rgb(207, 171, 171);
     box-shadow: 3px 3px 5px black;
+    
 }
 .comments {
     border: 1px solid black;
@@ -57,9 +80,6 @@ body {
 .comments li {
     padding-right: 10px;
 }
-
-
-
 
   /*styling for the add book pop*/
 label {
@@ -71,23 +91,24 @@ label {
     left: 45%;
     top: 5%;
     transform: translate(-50%, 5%);
-    border: 3px solid #999999;
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px black;
     z-index: 9;
 }
 .bookForm {
     max-width: 300px;
     padding: 20px;
-    background-color: white;
+    background-color: silver;
 }
 .bookForm input[type=text] {
     width: 90%;
     padding: 15px;
     margin: 5px 0 20px 0;
     border: none;
-    background: #bbc585;
+    background: #f4f8dd;
 }
 .bookForm input[type=text]:focus {
-    background-color: #eeeedc;
+    background-color: white;
     outline: none;
 }
 .bookForm .btn {
@@ -103,9 +124,54 @@ label {
 .bookForm .cancel {
     background-color: #cc0000;
 }
-.bookForm .btn:hover,
-.openButton:hover {
+.bookForm .btn:hover {
     opacity: 1;
 }
 
 
+/* about page */
+.about {
+    width: 90%;
+    border: 1px solid black;
+    background-color: silver;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutPic {
+    height: 50%;
+    width: 50%;
+    align-self: center;
+}
+.about p {
+    font-size: 1.3em;
+}
+
+/*cotact page*/
+
+.contact {
+    border: 1px solid black;
+    background-color: silver;
+    width: 50%;
+    margin: auto;
+}
+.contactDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contactDiv p, .contactDiv a  {
+    margin: auto;
+    padding: 15px
+}
+
+.contactDiv a {
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: gold;
+    opacity: .8;
+}
+.contactDiv a:hover {
+    opacity: 1;
+}
